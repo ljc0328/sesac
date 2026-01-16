@@ -1,0 +1,4 @@
+2026-01-16 14:18:20,768 [INFO] main.py:56 - CREATE API 요청됨
+2026-01-16 14:18:20,844 [INFO] main.py:79 - CREATE API 성공 - ID: 1, Content: 0116 메인미션 테스트
+2026-01-16 14:19:18,544 [INFO] main.py:56 - CREATE API 요청됨
+2026-01-16 14:19:18,636 [INFO] main.py:79 - CREATE API 성공 - ID: 2, Content: 0116 메인미션 테스트
