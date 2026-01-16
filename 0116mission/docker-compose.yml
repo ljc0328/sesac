@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "${DB_PORT}:${DB_PORT}"  # .env에서 가져옴
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}  # .env에서 가져옴
+      MYSQL_DATABASE: ${DB_NAME}           # .env에서 가져옴
+    restart: always
+
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
+    restart: always
